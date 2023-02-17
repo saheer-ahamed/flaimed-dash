@@ -1,0 +1,74 @@
+.main {
+    padding: 3rem 0;
+    width: 78%;
+    height: 135vh;
+    overflow: hidden;
+
+
+    .menuBar {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid hsl(0, 0%, 85%);
+        align-items: center;
+
+        .category_list {
+            a {
+                float: left;
+                display: block;
+                color: hsl(0, 5%, 44%);
+                text-align: center;
+                padding: 6px 25px;
+                text-decoration: none;
+                font-size: 1.6rem;
+                font-weight: 400;
+
+                &.active {
+                    color: black;
+                    border-bottom: 5px solid hsl(28, 92%, 54%);
+
+                }
+            }
+        }
+
+        .menu_settings {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+
+            .setting {
+                font-size: 1.2rem;
+                color: hsl(28, 100%, 50%);
+                font-weight: 700;
+            }
+
+            .menu_icon,
+            .exchange_icon {
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 0 .2rem;
+            }
+
+            .exchange_icon {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .section {
+        background: hsl(252, 29%, 97%);
+        padding: 1rem 2rem 2rem;
+        margin-top: 1rem;
+        border-radius: 20px;
+        position: relative;
+        height: 120vh;
+
+        .inner_section {
+            overflow-y: scroll;
+            height: 110vh;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

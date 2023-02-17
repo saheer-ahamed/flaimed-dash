@@ -1,0 +1,40 @@
+.eachSection {
+    padding: 2rem 0;
+
+
+    .sectionHeading {
+        margin-bottom: 2rem;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: -1.8rem;
+            padding: 1rem 1rem 0 0;
+            background: hsl(252, 29%, 97%);
+            font-size: 1.5rem;
+            color: hsl(28, 92%, 54%);
+
+            span {
+                margin-left: .4rem;
+                color: black;
+            }
+        }
+
+        p {
+            position: absolute;
+            right: 0;
+            top: -.7rem;
+            background-color: hsl(252, 29%, 97%);
+            font-size: 1.1rem;
+            padding: 0 1.5rem;
+            color: hsl(0, 5%, 44%);
+        }
+    }
+
+    .sectionBody {
+        position: relative;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

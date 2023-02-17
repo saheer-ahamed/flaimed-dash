@@ -1,0 +1,63 @@
+.footer_section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: hsl(252, 29%, 97%);
+    border-radius: 20px;
+    padding: 4rem;
+
+    .company_details {
+        img {
+            transform: scale(2);
+            margin: 0 0 1.3rem 3rem;
+        }
+
+        .location_contact {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    .site_details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        div {
+            margin-top: 1rem;
+            text-align: center;
+
+            span {
+                text-decoration: underline;
+                font-size: 1.1rem;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            color: rgb(163, 163, 163);
+        }
+    }
+
+    .social_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+
+        img:first-child {
+            max-width: 13rem;
+        }
+
+        img:last-child {
+            max-width: 11rem;
+        }
+    }
+}

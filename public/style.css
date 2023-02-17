@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container .major-section {
+  display: flex;
+  margin: 3.2rem;
+  gap: 2.3rem;
+  width: 95vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sideBar {
+  position: relative;
+  padding: 0 1rem 1rem 1rem;
+  width: 16%;
+  background: hsl(252deg, 29%, 97%);
+  border-radius: 10px;
+}
+.sideBar .logoDiv {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+.sideBar .logoDiv img {
+  width: 9rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.2);
+}
+.sideBar .menuDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar .menuDiv ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+.sideBar .menuDiv ul li {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+.sideBar .menuDiv ul li .icon {
+  font-size: 1.7rem;
+  color: hsl(0deg, 5%, 24%);
+}
+.sideBar .menuDiv ul li span {
+  font-size: 1.1rem;
+  color: hsl(0deg, 2%, 42%);
+}
+.sideBar .menuDiv ul li:hover span {
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 700;
+}
+.sideBar .menuDiv ul .favourite-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  font-size: 1.1rem;
+  margin: -0.7rem 0 0 3.2rem;
+  color: hsl(0deg, 2%, 42%);
+}
+.sideBar .menuDiv ul .favourite-menu li.active {
+  color: black;
+  font-weight: 600;
+}
+.sideBar .banner-ads {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, hsl(26deg, 86%, 65%), hsl(22deg, 84%, 57%));
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 8rem;
+}
+.sideBar .banner-ads .ad-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.sideBar .banner-ads .ad-card p {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+.sideBar .banner-ads .ad-card .rocket-icon {
+  font-size: 2.5rem;
+}
+.sideBar .banner-ads .btn-upgrade {
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: hsl(22deg, 84%, 57%);
+  font-weight: 600;
+}
+
+.main {
+  padding: 3rem 0;
+  width: 78%;
+  height: 135vh;
+  overflow: hidden;
+}
+.main .menuBar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(0deg, 0%, 85%);
+  align-items: center;
+}
+.main .menuBar .category-list a {
+  float: left;
+  display: block;
+  color: hsl(0deg, 5%, 44%);
+  text-align: center;
+  padding: 6px 25px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.main .menuBar .category-list a.active {
+  color: black;
+  border-bottom: 5px solid hsl(28deg, 92%, 54%);
+}
+.main .menuBar .menu-settings {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.main .menuBar .menu-settings .setting {
+  font-size: 1.2rem;
+  color: hsl(28deg, 100%, 50%);
+  font-weight: 700;
+}
+.main .menuBar .menu-settings .menu-icon,
+.main .menuBar .menu-settings .exchange-icon {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0 0.2rem;
+}
+.main .menuBar .menu-settings .exchange-icon {
+  transform: rotate(90deg);
+}
+.main .section {
+  background: hsl(252deg, 29%, 97%);
+  padding: 1rem 2rem 2rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  position: relative;
+  height: 120vh;
+}
+.main .section .inner-section {
+  overflow-y: scroll;
+  height: 110vh;
+}
+.main .section .inner-section::-webkit-scrollbar {
+  display: none;
+}
+.main .section .inner-section .eachSection {
+  padding: 2rem 0;
+}
+.main .section .inner-section .eachSection .sectionHeading {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.main .section .inner-section .eachSection .sectionHeading h2 {
+  position: absolute;
+  top: -1.8rem;
+  padding: 1rem 1rem 0 0;
+  background: hsl(252deg, 29%, 97%);
+  font-size: 1.5rem;
+  color: hsl(28deg, 92%, 54%);
+}
+.main .section .inner-section .eachSection .sectionHeading h2 span {
+  margin-left: 0.4rem;
+  color: black;
+}
+.main .section .inner-section .eachSection .sectionHeading p {
+  position: absolute;
+  right: 0;
+  top: -0.7rem;
+  background-color: hsl(252deg, 29%, 97%);
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  color: hsl(0deg, 5%, 44%);
+}
+.main .section .inner-section .eachSection .sectionBody {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 16rem;
+  height: 26rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgb(114, 114, 114);
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent, black);
+  z-index: 1;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail img {
+  height: 100%;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .username {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: absolute;
+  bottom: 5.4rem;
+  left: 25px;
+  color: rgb(197, 196, 196);
+  font-size: 1rem;
+  z-index: 3;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .username img {
+  width: 0.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: 0 0 5px 1px;
+  border-radius: 50%;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .user {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  bottom: 3.2rem;
+  font-size: 0.8rem;
+  left: 20px;
+  z-index: 3;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .user span {
+  font-weight: lighter;
+  color: #e9e6e6;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .user img {
+  width: 2rem;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .location {
+  display: flex;
+  width: 100%;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .location .location-icon,
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .location p {
+  position: absolute;
+  bottom: 1.8rem;
+  color: rgb(197, 196, 196);
+  z-index: 3;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .location .location-icon {
+  left: 20px;
+  font-size: 1.1rem;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail .location p {
+  left: 44px;
+}
+.main .section .inner-section .eachSection .sectionBody .eachCard .card-thumbnail > span {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 24px;
+  color: rgb(165, 165, 165);
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  z-index: 3;
+}
+
+.pagination {
+  position: absolute;
+  left: 45rem;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  font-weight: bolder;
+}
+.pagination .page-btn {
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+  background: #fff;
+}
+.pagination .muted-btn {
+  border: 1px solid hsl(214deg, 17%, 92%);
+  color: hsl(214deg, 17%, 92%);
+}
+.pagination .arrow-left {
+  background: hsl(28deg, 91%, 82%);
+  border: none;
+  color: #fff;
+}
+.pagination .border-btn {
+  border: 1px solid hsl(28deg, 81%, 65%);
+  color: hsl(28deg, 81%, 65%);
+}
+
+footer {
+  margin-top: 7rem;
+  padding: 1rem 3.5rem;
+}
+footer .footer-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: hsl(252deg, 29%, 97%);
+  border-radius: 20px;
+  padding: 4rem;
+}
+footer .footer-section .company-details img {
+  transform: scale(2);
+  margin: 0 0 1.3rem 3rem;
+}
+footer .footer-section .company-details .location-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .footer-section .site-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer-section .site-details ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer-section .site-details div {
+  margin-top: 1rem;
+  text-align: center;
+}
+footer .footer-section .site-details div span {
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+footer .footer-section .site-details .copyright {
+  text-align: center;
+  color: rgb(163, 163, 163);
+}
+footer .footer-section .social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+footer .footer-section .social-buttons img:first-child {
+  max-width: 13rem;
+}
+footer .footer-section .social-buttons img:last-child {
+  max-width: 11rem;
+}/*# sourceMappingURL=style.css.map */

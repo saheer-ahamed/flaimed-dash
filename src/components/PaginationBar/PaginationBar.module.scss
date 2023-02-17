@@ -1,0 +1,33 @@
+.pagination {
+    position: absolute;
+    left: 45rem;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    font-weight: bolder;
+
+    .page_btn {
+        padding: .3rem .6rem;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+        text-align: center;
+        background: #fff;
+    }
+
+    .muted_btn {
+        border: 1px solid hsl(214, 17%, 92%);
+        color: hsl(214, 17%, 92%);
+    }
+
+    .arrow_left {
+        background: hsl(28, 91%, 82%);
+        border: none;
+        color: #fff;
+    }
+
+    .border_btn {
+        border: 1px solid hsl(28, 81%, 65%);
+        color: hsl(28, 81%, 65%);
+    }
+}

@@ -1,0 +1,104 @@
+.sideBar {
+    position: relative;
+    padding: 0 1rem 1rem 1rem;
+    width: 16%;
+    background: hsl(252, 29%, 97%);
+    border-radius: 10px;
+
+    .logoDiv {
+        display: flex;
+        justify-content: center;
+        padding: 2.5rem 0;
+
+        img {
+            width: 9rem;
+            object-fit: cover;
+            transform: scale(1.2);
+        }
+    }
+
+    .menuDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: .5rem 0 .5rem 1rem;
+
+            li {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+                cursor: pointer;
+
+                .icon {
+                    font-size: 1.7rem;
+                    color: hsl(0, 5%, 24%);
+                }
+
+                span {
+                    font-size: 1.1rem;
+                    color: hsl(0, 2%, 42%);
+                }
+
+                &:hover span {
+                    color: hsl(0, 0%, 0%);
+                    font-weight: 700;
+                }
+            }
+
+            .favourite_menu {
+                display: flex;
+                flex-direction: column;
+                gap: 1.3rem;
+                font-size: 1.1rem;
+                margin: -.7rem 0 0 3.2rem;
+                color: hsl(0, 2%, 42%);
+
+                li.active {
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .banner_ads {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right, hsl(26, 86%, 65%), hsl(22, 84%, 57%));
+        color: white;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-top: 8rem;
+
+        .ad_card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: .3rem;
+
+            p {
+                font-size: .8rem;
+                line-height: 1.1rem;
+            }
+
+            .rocket_icon {
+                font-size: 2.5rem;
+            }
+        }
+
+        .btn_upgrade {
+            background: #fff;
+            border-radius: 10px;
+            border: none;
+            padding: .5rem 1rem;
+            color: hsl(22, 84%, 57%);
+            font-weight: 600;
+        }
+    }
+}

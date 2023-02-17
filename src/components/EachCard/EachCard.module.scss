@@ -1,0 +1,100 @@
+.eachCard {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 16rem;
+    height: 26rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgb(114, 114, 114);
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to bottom, transparent, black);
+        z-index: 1;
+    }
+
+    .card_thumbnail {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+
+        .username {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            position: absolute;
+            bottom: 5.4rem;
+            left: 25px;
+            color: rgb(197, 196, 196);
+            font-size: 1rem;
+            z-index: 3;
+
+            img {
+                width: .4rem;
+                object-fit: contain;
+                box-shadow: 0 0 5px 1px;
+                border-radius: 50%;
+            }
+        }
+
+        .user {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            bottom: 3.2rem;
+            font-size: .8rem;
+            left: 20px;
+            z-index: 3;
+
+            span {
+                font-weight: lighter;
+                color: #e9e6e6;
+            }
+
+            img {
+                width: 2rem;
+            }
+        }
+
+        .location {
+            display: flex;
+            width: 100%;
+
+            .location_icon,
+            p {
+                position: absolute;
+                bottom: 1.8rem;
+                color: rgb(197, 196, 196);
+                z-index: 3;
+            }
+
+            .location_icon {
+                left: 20px;
+                font-size: 1.1rem;
+            }
+
+            p {
+                left: 44px;
+            }
+        }
+
+        >span {
+            position: absolute;
+            bottom: .7rem;
+            left: 24px;
+            color: rgb(165, 165, 165);
+            font-size: .8rem;
+            letter-spacing: .1rem;
+            z-index: 3;
+        }
+    }
+}
